@@ -13,16 +13,18 @@ const plex = IBM_Plex_Mono({
   display: 'swap',
 });
 export const metadata: Metadata = {
-  metadataBase: new URL('https://deus-oleksii.early-emu-3452.chatgpt.site'),
+  metadataBase: new URL('https://deus42.github.io/'),
   title: 'Deus — Oleksii Gapchenko · Architect & Builder',
   description:
     'Solutions architect and hands-on builder. Enterprise systems, independent software, and useful experiments. Selected work by Oleksii Gapchenko, based in Croatia.',
+  alternates: { canonical: '/' },
   openGraph: {
     title: 'Deus — Oleksii Gapchenko',
     description:
       'Solutions architect. Hands-on builder. Explore my independent software and the thinking behind it.',
     type: 'website',
     locale: 'en_US',
+    url: 'https://deus42.github.io/',
   },
   icons: { icon: '/favicon.svg' },
 };

@@ -1,11 +1,13 @@
 # Deus
 
-Personal website for Oleksii Gapchenko. Built with React, TypeScript, and Vinext, with self-hosted fonts and a static Sites export.
+Personal website for Oleksii Gapchenko. Built with React, TypeScript, and Vinext, with self-hosted fonts and a static export.
+
+Live at **https://deus42.github.io/**.
 
 ## Develop
 
 ```sh
-npm install
+npm ci
 npm run dev -- --port 4310
 ```
 
@@ -24,6 +26,12 @@ The page lives in `app/page.tsx`, the design in `app/globals.css`, and small pro
 
 The hero is original generated architectural artwork, not a photograph of a real landmark. The portrait comes from Oleksii's public GitHub profile. The game image is an actual development screenshot. AllCheck uses its own app icon. No personal project databases or private financial records are part of this website.
 
-Hosting is registered in `.openai/hosting.json`. Sites access remains owner-only. Local research and verification output are ignored and are not part of the deployment.
+## Deployment
+
+GitHub Actions verifies and builds every push to `main`, then publishes `dist/client` to GitHub Pages. The workflow can also be run manually from the Actions tab. No deployment secrets are needed; GitHub provides a token scoped to each run.
+
+The repository is named `deus42.github.io` so the site and its assets are served from the account's root URL. If the domain changes, update the metadata in `app/layout.tsx`.
+
+`.openai/hosting.json` retains the original Sites preview configuration. Local research and verification output are ignored and are not part of the deployment.
 
 Lint checks site-owned code; the unmodified scaffold component catalog and generated browser artifacts are excluded. The deployment contains only static public output, with no React server or image-processing endpoint.
