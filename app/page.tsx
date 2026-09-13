@@ -27,15 +27,14 @@ export default function Home() {
         <a className="wordmark" href="#top" aria-label="Deus, home">
           deus<span>42</span>
         </a>
-        <p className="header-caption eyebrow">Architecture. Code. Curiosity.</p>
         <nav aria-label="Main navigation">
-          <a href="#work">Work</a>
+          <a href="#work">Projects</a>
           <a className="nav-approach" href="#approach">
-            Approach
+            How I work
           </a>
           <a href="#about">About</a>
           <a href="#contact">
-            Let’s talk <ArrowUpRight size={16} aria-hidden="true" />
+            Contact <ArrowUpRight size={16} aria-hidden="true" />
           </a>
         </nav>
       </header>
@@ -47,7 +46,7 @@ export default function Home() {
             <p className="eyebrow">
               Oleksii Gapchenko
               <br />
-              <span>Solutions architect & builder</span>
+              <span>Solutions architect & engineer</span>
             </p>
             <Asterisk className="hero-asterisk" aria-hidden="true" />
           </div>
@@ -57,16 +56,16 @@ export default function Home() {
             </h1>
             <div className="hero-intro">
               <p>
-                I turn complex systems
+                Enterprise systems for work.
                 <br />
-                into useful software.
+                These projects, for myself.
               </p>
               <a
                 href="#work"
                 className="hero-link"
-                aria-label="Explore my work"
+                aria-label="See the projects"
               >
-                Explore my work{' '}
+                See the projects{' '}
                 <span>
                   <ArrowDownRight size={24} aria-hidden="true" />
                 </span>
@@ -74,7 +73,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-foot eyebrow">
-            <span>Independent work · Considered systems</span>
+            <span>Four projects · One you can play right now</span>
             <span>
               Based in Croatia <span className="location-dot" />
             </span>
@@ -83,16 +82,16 @@ export default function Home() {
 
         <section id="work" aria-labelledby="work-title">
           <div className="intro-section section-wrap reveal">
-            <p className="eyebrow section-index">01 / Selected work</p>
+            <p className="eyebrow section-index">01 / Projects</p>
             <div>
               <h2 id="work-title">
-                Things I wanted to exist.
+                Four things I wanted to use.
                 <br />
-                <span>So I’m building them.</span>
+                <span>So I built them.</span>
               </h2>
               <p className="section-description">
-                Personal software, practical experiments, and a world to get
-                lost in.
+                A media library, a browser RPG, a map workspace, and a finance
+                app. All of it built outside work hours.
               </p>
             </div>
           </div>
@@ -105,7 +104,7 @@ export default function Home() {
                 aria-label="Visit AllCheck (invitation required)"
               >
                 <div className="visual-topline eyebrow">
-                  <span>One library. All your worlds.</span>
+                  <span>Films, shows, games, books</span>
                   <span>01—04</span>
                 </div>
                 <div className="allcheck-brand">
@@ -137,7 +136,7 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="allcheck-bottom">
-                  <span className="eyebrow">Your taste. Your collection.</span>
+                  <span className="eyebrow">Invitation only for now</span>
                   <span className="visual-arrow">
                     <ArrowUpRight size={23} />
                   </span>
@@ -152,13 +151,11 @@ export default function Home() {
                 </span>
               </div>
               <p className="project-description">
-                One private home for everything you watch, play, and read. Keep
-                your collection, discover what’s next, and make it your own.
+                A private library for films, shows, games, and books. What
+                you’ve finished, what you’re halfway through, what’s next.
               </p>
               <div className="project-bottom">
-                <span className="eyebrow">
-                  Product design & full-stack engineering
-                </span>
+                <span className="eyebrow">Design and engineering</span>
                 <a
                   href="https://allcheck.app/"
                   {...external}
@@ -185,13 +182,13 @@ export default function Home() {
                 />
                 <div className="getaway-shade" aria-hidden="true" />
                 <div className="visual-topline eyebrow">
-                  <span>A city that’s always watching.</span>
+                  <span>Curfew starts at dusk.</span>
                   <span>Level 00</span>
                 </div>
                 <div className="getaway-title">
                   THE
                   <br />
-                  GETAWAY<span>Surveillance. Choices. Consequences.</span>
+                  GETAWAY<span>An RPG about getting out.</span>
                 </div>
                 <span className="visual-arrow">
                   <ArrowUpRight size={23} />
@@ -205,14 +202,11 @@ export default function Home() {
                 </span>
               </div>
               <p className="project-description">
-                An occupied city. A curfew. A way out. A browser RPG built
-                around surveillance, conversation, and the choices you can live
-                with.
+                A browser RPG set in an occupied city under curfew.
+                Surveillance, dialogue, and choices you can’t take back.
               </p>
               <div className="project-bottom">
-                <span className="eyebrow">
-                  Game systems, world design & engineering
-                </span>
+                <span className="eyebrow">World, systems, code</span>
                 <a
                   href="https://deus42.github.io/the-getaway/"
                   {...external}
@@ -226,8 +220,8 @@ export default function Home() {
           </div>
           <div className="workshop section-wrap reveal">
             <div className="workshop-heading">
-              <p className="eyebrow">Also on the workbench</p>
-              <span className="eyebrow">A closer look at work in progress</span>
+              <p className="eyebrow">Also in progress</p>
+              <span className="eyebrow">Two more, further from done</span>
             </div>
             <details className="workshop-project">
               <summary>
@@ -235,31 +229,29 @@ export default function Home() {
                   <MapPin aria-hidden="true" />
                 </span>
                 <span className="workshop-name">
-                  Routewise<span>Maps you can talk to.</span>
+                  Routewise<span>Ask a question, get a map.</span>
                 </span>
                 <span className="workshop-type">Map workspace · Prototype</span>
                 <Plus className="details-plus" aria-hidden="true" />
               </summary>
               <div className="workshop-detail">
                 <p>
-                  Describe a place or a question. Build up an interactive map
-                  with boundaries, open-data layers, and the things you want to
-                  understand. The current AI Maps prototype makes the map itself
-                  part of the conversation.
+                  Ask in plain language, get a map back: boundaries, open-data
+                  layers, whatever you’re actually trying to see. Early
+                  prototype, public code.
                 </p>
                 <div>
-                  <p className="eyebrow">The design question</p>
+                  <p className="eyebrow">What I’m testing</p>
                   <p>
-                    Can natural language make geographic data easier to explore
-                    without taking away precise control?
+                    Whether plain language can replace half the GIS menu without
+                    taking away precise control.
                   </p>
                   <a
                     href="https://github.com/deus42/AIMaps"
                     {...external}
                     className="inline-link"
                   >
-                    Explore the code{' '}
-                    <ArrowUpRight size={17} aria-hidden="true" />
+                    See the code <ArrowUpRight size={17} aria-hidden="true" />
                   </a>
                 </div>
               </div>
@@ -270,7 +262,7 @@ export default function Home() {
                   <Waves aria-hidden="true" />
                 </span>
                 <span className="workshop-name">
-                  MoneyWave<span>Follow the money. Keep the data.</span>
+                  MoneyWave<span>Where the money actually went.</span>
                 </span>
                 <span className="workshop-type">
                   Personal finance · Local application
@@ -279,16 +271,16 @@ export default function Home() {
               </summary>
               <div className="workshop-detail">
                 <p>
-                  A private finance workspace that follows money across
-                  accounts, currencies, and transfers. Encrypted local storage
-                  keeps the underlying records on your own machine.
+                  Tracks money across accounts, currencies, and transfers.
+                  Records stay encrypted on your own machine and nothing leaves
+                  it.
                 </p>
                 <div>
-                  <p className="eyebrow">The design question</p>
+                  <p className="eyebrow">What I’m testing</p>
                   <p>
-                    How do you make a financial picture understandable while
-                    staying honest about missing evidence? Every movement should
-                    be traceable; uncertainty should stay visible.
+                    Whether a finance app can admit what it doesn’t know. Every
+                    transfer traceable, every gap visible instead of quietly
+                    averaged away.
                   </p>
                   <span className="private-note">
                     <Check size={16} aria-hidden="true" />
@@ -308,39 +300,39 @@ export default function Home() {
           <div className="approach-heading reveal">
             <p className="eyebrow section-index">02 / How I work</p>
             <h2 id="approach-title">
-              See the whole system.
+              Three habits
               <br />
-              <span>Care about the details.</span>
+              <span>that survived twenty years.</span>
             </h2>
           </div>
           <div className="principles">
             <article className="principle reveal">
               <span className="principle-number eyebrow">01</span>
-              <h3>Understand before adding.</h3>
+              <h3>Find the real constraint.</h3>
               <p>
-                Start with the real constraint. Make the tradeoffs explicit. The
-                useful solution is often smaller than the first idea.
+                Most of what gets asked for is a symptom. The fix is usually
+                smaller than the first proposal, and cheaper to keep running.
               </p>
             </article>
             <article className="principle reveal">
               <span className="principle-number eyebrow">02</span>
-              <h3>Stay close to the build.</h3>
+              <h3>Stay in the code.</h3>
               <p>
-                Architecture should survive contact with the code, the people
-                maintaining it, and the system running in production.
+                A diagram nobody can implement is a drawing. I build enough of
+                the thing myself to know the design holds up.
               </p>
             </article>
             <article className="principle reveal">
               <span className="principle-number eyebrow">03</span>
-              <h3>Keep the proof in the loop.</h3>
+              <h3>Check it where it runs.</h3>
               <p>
-                Use AI to move faster through design, implementation, and
-                review. Check the result where someone will actually use it.
+                AI writes a lot of my first drafts now. It doesn’t get to decide
+                whether they work. Tests and real users do.
               </p>
             </article>
           </div>
           <div className="toolkit reveal">
-            <p className="eyebrow">Tools I work with</p>
+            <p className="eyebrow">What I use</p>
             <p>
               .NET <span>/</span> TypeScript <span>/</span> React <span>/</span>{' '}
               Python <span>/</span> Azure <span>/</span> AWS <span>/</span> AI &
@@ -355,9 +347,7 @@ export default function Home() {
           aria-labelledby="about-title"
         >
           <div className="about-top reveal">
-            <p className="eyebrow section-index">
-              03 / The person behind the projects
-            </p>
+            <p className="eyebrow section-index">03 / About</p>
             <span className="eyebrow">Building software since 2006</span>
           </div>
           <div className="about-grid">
@@ -377,33 +367,31 @@ export default function Home() {
             </div>
             <div className="about-copy reveal">
               <h2 id="about-title">
-                An architect’s perspective.
+                Twenty years on big systems.
                 <br />
-                <span>A builder’s instinct.</span>
+                <span>Now a few of my own.</span>
               </h2>
               <p>
-                I’m Oleksii, a solutions architect and hands-on engineer based
-                in Croatia. I’ve spent my career helping teams make complex
-                enterprise systems work: identity, cloud platforms,
-                integrations, and the migrations between them.
+                I’m Oleksii, a solutions architect based in Croatia. Most of my
+                work is identity, cloud platforms, integrations, and the
+                migrations nobody volunteers for.
               </p>
               <p>
-                My own projects give that experience somewhere to play. A better
-                media library. A map that understands a question. A game with a
-                city worth escaping. I like taking an idea all the way to
-                something you can use.
+                The projects here are where I make every decision myself,
+                including the bad ones. An idea only gets interesting to me once
+                someone else can open it and use it.
               </p>
               <p className="offscreen">
                 <span className="eyebrow">Away from the screen</span>Cinema,
-                Formula 1, snowboarding, and experimenting in the kitchen.
-                Curiosity tends to follow me home.
+                Formula 1, snowboarding, and cooking things that don’t always
+                work.
               </p>
               <a
                 className="text-link"
                 href="https://www.linkedin.com/in/deus42/"
                 {...external}
               >
-                More about my background{' '}
+                Background on LinkedIn{' '}
                 <ArrowUpRight size={18} aria-hidden="true" />
               </a>
             </div>
@@ -412,18 +400,18 @@ export default function Home() {
 
         <footer className="contact section-wrap" id="contact">
           <div className="contact-top">
-            <p className="eyebrow">04 / Start a conversation</p>
+            <p className="eyebrow">04 / Contact</p>
             <Asterisk size={38} strokeWidth={1.2} aria-hidden="true" />
           </div>
           <a className="contact-title" href="mailto:deusson@gmail.com">
-            Let’s make it work.
+            Email me.
             <ArrowUpRight aria-hidden="true" />
           </a>
           <div className="contact-middle">
             <p>
-              A system to untangle, a product to build,
+              A system to untangle, something to build,
               <br />
-              or an interesting idea. I’d like to hear it.
+              or a project you’re stuck on. I’ll reply.
             </p>
             <CopyEmail />
           </div>

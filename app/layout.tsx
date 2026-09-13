@@ -14,14 +14,14 @@ const plex = IBM_Plex_Mono({
 });
 export const metadata: Metadata = {
   metadataBase: new URL('https://deus42.github.io/'),
-  title: 'Deus — Oleksii Gapchenko · Architect & Builder',
+  title: 'Deus — Oleksii Gapchenko, solutions architect',
   description:
-    'Solutions architect and hands-on builder. Enterprise systems, independent software, and useful experiments. Selected work by Oleksii Gapchenko, based in Croatia.',
+    'Oleksii Gapchenko, solutions architect in Croatia. Enterprise systems for work; a media library, a browser RPG, a map workspace, and a finance app built for myself.',
   alternates: { canonical: '/' },
   openGraph: {
     title: 'Deus — Oleksii Gapchenko',
     description:
-      'Solutions architect. Hands-on builder. Explore my independent software and the thinking behind it.',
+      'Solutions architect in Croatia. Four personal projects: AllCheck, The Getaway, Routewise, and MoneyWave.',
     type: 'website',
     locale: 'en_US',
     url: 'https://deus42.github.io/',
