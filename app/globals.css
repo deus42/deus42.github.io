@@ -728,6 +728,16 @@ h2 span {
   font-size: 12px;
   margin-top: 20px;
 }
+.moneywave-detail {
+  row-gap: 28px;
+}
+.moneywave-detail > .moneywave-intro,
+.moneywave-detail > .private-note {
+  grid-column: 1 / -1;
+}
+.moneywave-detail > .private-note {
+  margin-top: 0;
+}
 /* Clear thinking, without a wall of credentials. */
 .approach {
   padding-top: 90px;
@@ -849,16 +859,18 @@ h2 span {
   margin-bottom: 6px;
 }
 .futurama-experiments {
-  max-width: 800px;
   margin: 30px 0 0;
-  font-size: 14px;
-  line-height: 1.7;
-  color: var(--muted);
 }
-.futurama-experiments > span {
-  display: block;
-  margin-bottom: 8px;
-  color: var(--foreground);
+.futurama-specialists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 18px;
+}
+.futurama-roles.futurama-specialists > div {
+  border-top: 1px solid var(--border);
+  border-bottom: 0;
+  padding: 18px 0 0;
 }
 .toolkit {
   display: flex;
@@ -1355,6 +1367,10 @@ h2 span {
   .futurama-workflow ol {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+  .futurama-specialists {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
   .toolkit > .eyebrow {
     margin-bottom: 15px;

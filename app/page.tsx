@@ -225,7 +225,9 @@ export default function Home() {
           <div className="workshop section-wrap reveal">
             <div className="workshop-heading">
               <p className="eyebrow">Also in progress</p>
-              <span className="eyebrow">Two more, further from done</span>
+              <span className="eyebrow">
+                A map prototype and a private finance workspace
+              </span>
             </div>
             <details className="workshop-project">
               <summary>
@@ -260,7 +262,7 @@ export default function Home() {
                 </div>
               </div>
             </details>
-            <details className="workshop-project">
+            <details className="workshop-project" id="moneywave">
               <summary>
                 <span className="workshop-symbol">
                   <Waves aria-hidden="true" />
@@ -269,28 +271,75 @@ export default function Home() {
                   MoneyWave<span>Where the money actually went.</span>
                 </span>
                 <span className="workshop-type">
-                  Personal finance · Local application
+                  Personal finance · Private workspace
                 </span>
                 <Plus className="details-plus" aria-hidden="true" />
               </summary>
-              <div className="workshop-detail">
-                <p>
-                  Tracks money across accounts, currencies, and transfers.
-                  Records stay encrypted on your own machine and nothing leaves
-                  it.
+              <div className="workshop-detail moneywave-detail">
+                <p className="moneywave-intro">
+                  A working finance app built around my own records. It brings
+                  bank statements, cash, budgets, trips, and large purchases
+                  into one report and keeps the source records available for
+                  checking the numbers.
                 </p>
                 <div>
-                  <p className="eyebrow">What I’m testing</p>
+                  <p className="eyebrow">Accounts, cash & currencies</p>
                   <p>
-                    Whether a finance app can admit what it doesn’t know. Every
-                    transfer traceable, every gap visible instead of quietly
-                    averaged away.
+                    Imports statements from multiple banks and follows money
+                    between accounts. Own transfers stay separate from
+                    spending; cash expenses, bank fees, and currency-conversion
+                    costs have their own place.
                   </p>
-                  <span className="private-note">
-                    <Check size={16} aria-hidden="true" />
-                    Private application · No public demo
-                  </span>
                 </div>
+                <div>
+                  <p className="eyebrow">Budgets with a history</p>
+                  <p>
+                    Category limits have start and end months, so a new plan
+                    preserves earlier budgets. Monthly views and annual
+                    comparisons show plan versus actual, with incomplete
+                    periods clearly marked.
+                  </p>
+                </div>
+                <div>
+                  <p className="eyebrow">Trips & large purchases</p>
+                  <p>
+                    Groups payments and refunds around a trip or purchase.
+                    Mixed payments can be split into individual items and
+                    categories. Purchases link back to payment evidence and
+                    can be archived without removing their spending.
+                  </p>
+                </div>
+                <div>
+                  <p className="eyebrow">Corrections that stick</p>
+                  <p>
+                    Confirmed categories survive reprocessing and report
+                    refreshes. Edits stay separate from original statements,
+                    with a history and undo. Unmatched payments remain visible
+                    for review.
+                  </p>
+                </div>
+                <div>
+                  <p className="eyebrow">Net worth, with dates attached</p>
+                  <p>
+                    Combines known account and cash positions with captured
+                    crypto valuations for the selected date. Missing balances
+                    and exchange rates stay unknown, and partial history is
+                    labelled as partial.
+                  </p>
+                </div>
+                <div>
+                  <p className="eyebrow">Private access</p>
+                  <p>
+                    The database stays encrypted on my Mac. Access over my
+                    private network makes the app usable from my phone, and
+                    an amount-hiding switch keeps figures off screen when
+                    needed.
+                  </p>
+                </div>
+                <span className="private-note">
+                  <Check size={16} aria-hidden="true" />
+                  Private application · No public demo
+                </span>
               </div>
             </details>
           </div>
@@ -409,12 +458,33 @@ export default function Home() {
                 </li>
               </ol>
             </div>
-            <p className="futurama-experiments reveal">
-              <span className="eyebrow">Specialist experiments</span>
-              Leela explores scoped work support; Bender explores blockchain
-              and finance research. I develop and evaluate them separately
-              before bringing them into the shared workflow.
-            </p>
+            <div className="futurama-experiments">
+              <p className="eyebrow reveal">Specialist agents in development</p>
+              <dl className="futurama-roles futurama-specialists">
+                <div className="reveal">
+                  <dt>
+                    Leela <span>Architecture</span>
+                  </dt>
+                  <dd>
+                    An architect agent for systems analysis, solution design,
+                    and technical review. The focus is clear interfaces,
+                    explicit tradeoffs, and designs that hold up in
+                    implementation.
+                  </dd>
+                </div>
+                <div className="reveal">
+                  <dt>
+                    Bender <span>Finance · IronClaw</span>
+                  </dt>
+                  <dd>
+                    An IronClaw-based specialist for finance and blockchain
+                    research: comparing options, checking assumptions, and
+                    tracing conclusions back to evidence. Research and
+                    proposals stay separate from actions that move money.
+                  </dd>
+                </div>
+              </dl>
+            </div>
           </section>
           <div className="toolkit reveal">
             <p className="eyebrow">What I use</p>
