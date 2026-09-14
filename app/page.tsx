@@ -93,6 +93,10 @@ export default function Home() {
                 A media library, a browser RPG, a map workspace, and a finance
                 app. All of it built outside work hours.
               </p>
+              <a className="text-link" href="#futurama">
+                Behind the projects: Futurama{' '}
+                <ArrowDownRight size={17} aria-hidden="true" />
+              </a>
             </div>
           </div>
           <div className="featured-work section-wrap">
@@ -331,6 +335,87 @@ export default function Home() {
               </p>
             </article>
           </div>
+          <section
+            className="futurama"
+            id="futurama"
+            aria-labelledby="futurama-title"
+          >
+            <div className="futurama-overview">
+              <div className="futurama-intro reveal">
+                <p className="eyebrow">Inside my workflow / Agentic systems</p>
+                <h3 id="futurama-title">Futurama</h3>
+                <p className="futurama-lead">
+                  The agent setup behind the work.
+                </p>
+                <p>
+                  I’m building a private multi-agent environment for work
+                  across research, engineering, and day-to-day operations.
+                  Signal is the conversation layer; work happens in
+                  repositories, tools, and reviewable artifacts.
+                </p>
+                <p>
+                  I set the direction, define the boundaries, and review the
+                  outcome. Each handoff has an owner, a bounded task, and a
+                  clear way to check the result.
+                </p>
+              </div>
+              <dl className="futurama-roles">
+                <div className="reveal">
+                  <dt>
+                    Hermes <span>Coordination</span>
+                  </dt>
+                  <dd>
+                    Routes requests, coordinates recurring work, reviews
+                    evidence, and keeps durable context. One owner speaks for
+                    a task, keeping the conversation focused.
+                  </dd>
+                </div>
+                <div className="reveal">
+                  <dt>
+                    Zoidberg + Codex <span>Engineering</span>
+                  </dt>
+                  <dd>
+                    Zoidberg handles scoped engineering work and technical
+                    review, with Codex as the primary coding executor. Changes
+                    come back with artifacts and verification results.
+                  </dd>
+                </div>
+                <div className="reveal">
+                  <dt>
+                    Vault-Tec <span>Knowledge & continuity</span>
+                  </dt>
+                  <dd>
+                    A curated knowledge base holds shared decisions and
+                    project context. Agentmemory keeps each agent’s episodic
+                    memory separate; new knowledge is proposed for review.
+                  </dd>
+                </div>
+              </dl>
+            </div>
+            <div className="futurama-workflow reveal">
+              <p className="eyebrow">From request to checked result</p>
+              <ol>
+                <li>
+                  <span className="eyebrow">01</span>Scope the task
+                </li>
+                <li>
+                  <span className="eyebrow">02</span>Assign & execute
+                </li>
+                <li>
+                  <span className="eyebrow">03</span>Verify the result
+                </li>
+                <li>
+                  <span className="eyebrow">04</span>Keep useful context
+                </li>
+              </ol>
+            </div>
+            <p className="futurama-experiments reveal">
+              <span className="eyebrow">Specialist experiments</span>
+              Leela explores scoped work support; Bender explores blockchain
+              and finance research. I develop and evaluate them separately
+              before bringing them into the shared workflow.
+            </p>
+          </section>
           <div className="toolkit reveal">
             <p className="eyebrow">What I use</p>
             <p>

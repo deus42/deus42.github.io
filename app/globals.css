@@ -765,6 +765,101 @@ h2 span {
   color: var(--muted);
   max-width: 350px;
 }
+/* Futurama: the working setup behind the principles. */
+.futurama {
+  border-top: 1px solid var(--border);
+  margin-top: 65px;
+  padding-top: 48px;
+}
+.futurama-overview {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 10%;
+}
+.futurama-intro h3 {
+  font-size: clamp(40px, 4.2vw, 64px);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 1.1;
+  margin: 18px 0 14px;
+}
+.futurama-intro > p:not(.eyebrow, .futurama-lead) {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 18px 0 0;
+}
+.futurama-intro > .futurama-lead {
+  font-size: 22px;
+  letter-spacing: -0.035em;
+  line-height: 1.4;
+  margin: 0;
+}
+.futurama-roles {
+  margin: 0;
+}
+.futurama-roles > div {
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+.futurama-roles > div:first-child {
+  padding-top: 0;
+}
+.futurama-roles dt {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 18px;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+}
+.futurama-roles dt > span {
+  font-family: var(--font-plex), monospace;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #8d4c2b;
+}
+.futurama-roles dd {
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+}
+.futurama-workflow {
+  margin-top: 42px;
+}
+.futurama-workflow ol {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 18px 0 0;
+}
+.futurama-workflow li {
+  border-top: 1px solid #bfbfb6;
+  padding-top: 14px;
+  font-size: 15px;
+}
+.futurama-workflow li > span {
+  display: block;
+  color: #8d4c2b;
+  margin-bottom: 6px;
+}
+.futurama-experiments {
+  max-width: 800px;
+  margin: 30px 0 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.futurama-experiments > span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--foreground);
+}
 .toolkit {
   display: flex;
   align-items: center;
@@ -1245,6 +1340,21 @@ h2 span {
     display: block;
     margin-top: 35px;
     padding-top: 25px;
+  }
+  .futurama {
+    margin-top: 38px;
+    padding-top: 30px;
+  }
+  .futurama-overview {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .futurama-workflow {
+    margin-top: 30px;
+  }
+  .futurama-workflow ol {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
   .toolkit > .eyebrow {
     margin-bottom: 15px;
