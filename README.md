@@ -26,7 +26,7 @@ The page lives in `app/page.tsx`, the design in `app/globals.css`, and small pro
 
 The Futurama section at `/#futurama` describes the private agent setup: Signal coordination, Hermes, Zoidberg/Codex engineering, and Vault-Tec with separate per-agent continuity. Leela is presented as an architect agent and Bender as an IronClaw-based finance and blockchain specialist, both in development. This is an architectural overview, not a live runtime status page; keep model versions, host details, private records, and operational logs out of the public copy.
 
-The MoneyWave entry at `/#moneywave` covers implemented imports, budgets, trip and purchase tracking, reversible corrections, dated valuations, and private access. Keep this a capability overview: never publish personal amounts, statements, account identifiers, private access URLs, or screenshots of real financial records.
+The featured MoneyWave card at `/#moneywave` uses its own product mark for a brand preview, followed by a short description and expandable capabilities. The preview is branding, not an app screenshot. Never publish personal amounts, statements, account identifiers, private access URLs, or screenshots of real financial records.
 
 The hero is original generated architectural artwork, not a photograph of a real landmark. The portrait comes from Oleksii's public GitHub profile. The game image is an actual development screenshot. AllCheck uses its own app icon. No personal project databases or private financial records are part of this website.
 

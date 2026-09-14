@@ -10,7 +10,6 @@ import {
   Tv,
   Gamepad2,
   BookOpen,
-  Waves,
 } from 'lucide-react';
 import { CopyEmail, SiteEffects } from './site-interactions';
 
@@ -221,12 +220,90 @@ export default function Home() {
                 </a>
               </div>
             </article>
+            <article className="project moneywave-project reveal" id="moneywave">
+              <figure
+                className="project-visual moneywave-visual"
+                aria-label="MoneyWave brand preview: its teal wave symbol above the product name on a pale green background."
+              >
+                <div className="visual-topline eyebrow" aria-hidden="true">
+                  <span>Personal finance</span>
+                  <span>Private by design</span>
+                </div>
+                <div className="moneywave-brand" aria-hidden="true">
+                  <Image
+                    unoptimized
+                    src="/images/moneywave-mark.png"
+                    alt=""
+                    width="1254"
+                    height="1254"
+                    loading="lazy"
+                  />
+                  <span>MoneyWave</span>
+                </div>
+                <div className="moneywave-topics eyebrow" aria-hidden="true">
+                  <span>Accounts</span>
+                  <span>Budgets</span>
+                  <span>Net worth</span>
+                </div>
+                <div className="moneywave-rings" aria-hidden="true" />
+              </figure>
+              <div className="moneywave-copy">
+                <div className="project-caption">
+                  <h3>MoneyWave</h3>
+                  <span className="project-status">
+                    <span />Private application
+                  </span>
+                </div>
+                <p className="project-description">
+                  Where the money actually went. Accounts, budgets, trips, and
+                  purchases in one private workspace, with the records to check
+                  the numbers.
+                </p>
+                <p className="moneywave-note">
+                  Built for my own finances. Encrypted on my Mac, accessible
+                  over my private network.
+                </p>
+                <details className="moneywave-more">
+                  <summary>
+                    More about MoneyWave
+                    <Plus className="details-plus" aria-hidden="true" />
+                  </summary>
+                  <div className="moneywave-detail">
+                    <p>
+                      <strong>Follow the money.</strong> Bank imports, cash,
+                      and currency conversion, with own transfers kept separate
+                      from spending.
+                    </p>
+                    <p>
+                      <strong>Plan and compare.</strong> Dated category budgets,
+                      monthly views, and annual plan-versus-actual comparisons.
+                    </p>
+                    <p>
+                      <strong>Keep the evidence.</strong> Trips and purchases
+                      linked to payments, split transactions, lasting category
+                      corrections, and undo.
+                    </p>
+                    <p>
+                      <strong>See what’s known.</strong> Dated net worth,
+                      including captured crypto valuations. Missing balances
+                      and rates stay unknown; amounts can be hidden on screen.
+                    </p>
+                  </div>
+                </details>
+                <div className="project-bottom">
+                  <span className="eyebrow">Design and engineering</span>
+                  <span className="private-note">
+                    <Check size={16} aria-hidden="true" />No public demo
+                  </span>
+                </div>
+              </div>
+            </article>
           </div>
           <div className="workshop section-wrap reveal">
             <div className="workshop-heading">
               <p className="eyebrow">Also in progress</p>
               <span className="eyebrow">
-                A map prototype and a private finance workspace
+                A map workspace in development
               </span>
             </div>
             <details className="workshop-project">
@@ -260,86 +337,6 @@ export default function Home() {
                     See the code <ArrowUpRight size={17} aria-hidden="true" />
                   </a>
                 </div>
-              </div>
-            </details>
-            <details className="workshop-project" id="moneywave">
-              <summary>
-                <span className="workshop-symbol">
-                  <Waves aria-hidden="true" />
-                </span>
-                <span className="workshop-name">
-                  MoneyWave<span>Where the money actually went.</span>
-                </span>
-                <span className="workshop-type">
-                  Personal finance · Private workspace
-                </span>
-                <Plus className="details-plus" aria-hidden="true" />
-              </summary>
-              <div className="workshop-detail moneywave-detail">
-                <p className="moneywave-intro">
-                  A working finance app built around my own records. It brings
-                  bank statements, cash, budgets, trips, and large purchases
-                  into one report and keeps the source records available for
-                  checking the numbers.
-                </p>
-                <div>
-                  <p className="eyebrow">Accounts, cash & currencies</p>
-                  <p>
-                    Imports statements from multiple banks and follows money
-                    between accounts. Own transfers stay separate from
-                    spending; cash expenses, bank fees, and currency-conversion
-                    costs have their own place.
-                  </p>
-                </div>
-                <div>
-                  <p className="eyebrow">Budgets with a history</p>
-                  <p>
-                    Category limits have start and end months, so a new plan
-                    preserves earlier budgets. Monthly views and annual
-                    comparisons show plan versus actual, with incomplete
-                    periods clearly marked.
-                  </p>
-                </div>
-                <div>
-                  <p className="eyebrow">Trips & large purchases</p>
-                  <p>
-                    Groups payments and refunds around a trip or purchase.
-                    Mixed payments can be split into individual items and
-                    categories. Purchases link back to payment evidence and
-                    can be archived without removing their spending.
-                  </p>
-                </div>
-                <div>
-                  <p className="eyebrow">Corrections that stick</p>
-                  <p>
-                    Confirmed categories survive reprocessing and report
-                    refreshes. Edits stay separate from original statements,
-                    with a history and undo. Unmatched payments remain visible
-                    for review.
-                  </p>
-                </div>
-                <div>
-                  <p className="eyebrow">Net worth, with dates attached</p>
-                  <p>
-                    Combines known account and cash positions with captured
-                    crypto valuations for the selected date. Missing balances
-                    and exchange rates stay unknown, and partial history is
-                    labelled as partial.
-                  </p>
-                </div>
-                <div>
-                  <p className="eyebrow">Private access</p>
-                  <p>
-                    The database stays encrypted on my Mac. Access over my
-                    private network makes the app usable from my phone, and
-                    an amount-hiding switch keeps figures off screen when
-                    needed.
-                  </p>
-                </div>
-                <span className="private-note">
-                  <Check size={16} aria-hidden="true" />
-                  Private application · No public demo
-                </span>
               </div>
             </details>
           </div>
@@ -440,23 +437,6 @@ export default function Home() {
                   </dd>
                 </div>
               </dl>
-            </div>
-            <div className="futurama-workflow reveal">
-              <p className="eyebrow">From request to checked result</p>
-              <ol>
-                <li>
-                  <span className="eyebrow">01</span>Scope the task
-                </li>
-                <li>
-                  <span className="eyebrow">02</span>Assign & execute
-                </li>
-                <li>
-                  <span className="eyebrow">03</span>Verify the result
-                </li>
-                <li>
-                  <span className="eyebrow">04</span>Keep useful context
-                </li>
-              </ol>
             </div>
             <div className="futurama-experiments">
               <p className="eyebrow reveal">Specialist agents in development</p>
